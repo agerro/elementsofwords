@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <title>Element of Words</title>
+    </head>
+    <body>
+		<div class="container">
+            <div style="padding-top: 10px;padding-bottom:30px;" id="header" class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Elements of Words</h1>
+                    <p class="lead">Type a word as input, and find out if that word can be spelled using the elements of the periodic table.</p>
+                </div>
+            </div>
+            <div id="search" class="row">
+                <div style="padding-top: 10px;padding-bottom:10px;" class="col-lg-12 text-center">
+                    <form>
+                        <div class="form-group">
+                            <label for="input-string">Enter the word you would like to search for</label>
+                            <input type="text" class="form-control" id="input-string" aria-describedby="textHelp" placeholder="Enter word...">
+                          
+                        </div>
+                    </form>
+                    <button class="btn btn-primary" onclick="checkWord()" id="search-button">Check word</button>
+                </div>
+            </div>
+            <div style="padding-top: 10px;padding-bottom:10px;height:auto" id="resultRow" class="row">
+                <div id="resultText" class="col-lg-12 text-center"></div>
+                <div id="resultImages" class="col-lg-12 text-center"></div>
+            </div>
+            <div style="display: none" id="footer" class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="list-unstyled">
+                        <li>Devner.se</li>
+                        <li>Somewhat of a copyright held @ 2017</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/index.js"></script>
+</html>
